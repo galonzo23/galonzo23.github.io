@@ -1,0 +1,41 @@
+
+
+body {
+    background: #333;
+}
+.body-text {
+    color: #ccc
+}
+
+a {
+  color: darkred;
+  text-decoration: none;
+}  
+a:hover {
+      color: red;
+}
+
+.cell {
+    float: left;
+    margin-right: 1.5em;
+    margin-bottom: .25em;
+    width: 17em;
+    overflow: hidden;
+}
+.cell span {
+    margin-right: .25em;
+}
+
+.container3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  @media (min-width: 992px) {
+    .container3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
